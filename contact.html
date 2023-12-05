@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klinvoice -- CONTACTS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="dash.js" defer></script>
+    <script src="contact.js" defer></script>
+</head>
+<body class="dashboard-body">
+
+    <!-- --------------------------------LOADING PAGE -->
+   <div class="loading">
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container-gif">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar"><i class="fa-solid fa-bars"></i></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                           <span class="name-content">
+                               <img src="images/user.svg">
+                               <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                           </span>
+                       </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="side-bar-gif">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="dashboard.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span  onclick="window.location.href ='dashboard.html';"><img src="images/light dash.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/dark invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span  onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span class="active" onclick="window.location.href ='contact.html';"><img src="images/dark-contact.svg"><p>Contacts</p></span>
+                <span onclick="window.location.href ='setting.html';"><img src="images/setting.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+        <div class="dashboard-wrapper-gif">
+            <!-- <div class="loader">  -->
+                <img src="images/loader-quit.svg" alt="">
+           <!-- </div> -->
+        </div>
+   </div>
+
+<!-- --------------------------------------------------------- MAIN PAGE -->
+
+
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar" onclick="displayOutput()"><i class="fa-solid fa-bars"></i></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                        <span class="name-content" onclick="myAccount()">
+                            <img src="images/user.svg">
+                            <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                        </span>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="frame">
+        <span onclick="window.location.href='billing.html';"><img src="images/cart.svg">Billings</span>
+        <span onclick="window.location.href='Sign In.html';"><img src="images/logot.svg">Log Out</span>
+        <span onclick="window.location.href='appon.html';"><img src="images/plug.svg">Addons</span>
+    </header>
+    <div class="side-bar">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="home.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span  onclick="window.location.href ='dashboard.html';"><img src="images/light dash.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span  onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span class="active" onclick="window.location.href ='contact.html';"><img src="images/dark-contact.svg"><p>Contacts</p></span>
+                <span onclick="window.location.href ='setting.html';"><img src="images/setting.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------toogle add contact -->
+    <div class="update-profile f-p">
+        <div class="profile-wrapper f-w">
+            <span>
+                <p>Add New Contact</p>
+                <i class="fa fa-times dismissProf"></i>
+            </span>
+            <form>
+                   <label for="name" class="name">NAME* <br>
+                    <input type="text" name="name" id="name" placeholder="Full Name(required)" required>
+                   </label>
+
+                <div class="change-name">
+                   <label for="email">EMAIL <br>
+                    <input type="email" name="email" id="email" placeholder="Email Address(Optional)">
+                   </label>
+                   <label for="no">PHONE NUMBER <br>
+                    <input type="number" name="no" id="no" placeholder="Enter Phone Number(Optional)">
+                   </label>
+                </div>
+                <label for="add">BILLING ADDRESS <br>
+                    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+                </label>
+                <div class="save">
+                    <button type="button">Close</button>
+                    <button type="button">+ Add to Expenses</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="update-profile s-p">
+        <div class="profile-wrapper s-w">
+            <span>
+                <p>Import Contacts</p>
+                <i class="fa fa-times dismissProf"></i>
+            </span>
+            <form>
+                <label for="file" class="file">SELECT FILE* <br>
+                    <input type="file" name="file" id="file" required>
+                   </label>
+                   <p>You can import your contacts directly from Microsoft Excel Spreadsheets. A maximum of 1,000 customer contacts can be imported at a time. </p>
+                <div class="saver">
+                    <button type="button"><img src="images/orangeimpot.svg"> Import Contacts</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  
+
+    <!-- ------------main -->
+    <main>
+        <div class="contact">
+            <div  class="create-invoice">
+                <div>
+                    <img src="images/checkman2.svg" >
+                    <p>Stay more organised with your business contacts.</p>
+                    <span>
+                        <button type="button" data-add>+ Add Contact</button>
+                        <button type="button" data-next style="background-color: var(--secondary-color);color: var(--main-color);"><img src="images/import.svg"> import contact</button>
+                    </span>
+                </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <p>© 2023 Klinvoice Inc. All Rights Reserved</p>
+            <p>API Document</p>
+        </div>
+    </footer>
+</body>
+</html>
