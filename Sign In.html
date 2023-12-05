@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinvoice -- SIGN IN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="node.js" defer></script>
+</head>
+<body>
+    <!-- sign in -->
+    <div  class="form--body" data-multi-step>
+        <!-- login form set:  login INFORMATION-->
+        <!-- <span class="back" onclick="history.back()" title="previous page"><i class="fa fa-chevron-left"></i>&nbsp;Back</span> -->
+        <form class="form--container" method="get" data-step>
+            <div class="form--layout">
+                <h1 class="account-information-text-tag card">Welcome Back!</h1>
+                
+                <div class="form--layout--sec card">
+                    <label for="name">Name</label>
+                    <input class="input" type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email" autocomplete="off" required>
+                    <label for="password">Password</label>
+                    <input class="input" type="password" name="password" id="password" autocomplete="off" required>
+                    <p class="fog">Forgot Password?&nbsp; <a href="/" title="Recover password">Reset</a> </p>
+                    <button type="button" class="btn-layout" onclick="window.location.href='dashboard.html';" data-next>Login</button>
+                    <p>Don't have an Account?&nbsp; <a href="sign up.html">Sign Up</a></p>
+                </div>
+                
+            </div>
+            <div class="image-layout">
+                <img src="images/Rectangle 1h.png">
+            </div>
+     </form>
+     </div>
+
+
+ </body>
+</html>

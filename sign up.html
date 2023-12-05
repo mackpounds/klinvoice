@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinvoice -- SIGN IN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="node.js" defer></script>
+</head>
+<body>
+    <!-- sign in -->
+    <div  class="form--body" data-multi-step>
+        <!-- login form set:  login INFORMATION-->
+        <form class="form--container" method="get" data-step>
+            <div class="form--layout">
+                <h1 class="account-information-text-tag card">Create Account</h1>
+                
+                <div class="form--layout--sec card">
+                    <label for="name">First Name</label>
+                    <input class="input" type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="lname">Last Name</label>
+                    <input class="input" type="text" name="lname" id="lname" autocomplete="off" required>
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email" autocomplete="off" required>
+                    <label for="password">Password</label>
+                    <input class="input" type="password" name="password" id="password" autocomplete="off" required>
+                    <span><input type="checkbox" name="check" id="check"> <label for="check">Terms and conditions</label></span>
+                    <p id="acpt">By accepting these terms and conditions, you acknowledge and agree to comply with the rules and guidelines governing our services. Please review them carefully as they outline important information regarding your use of our platform.</p>
+                    <button type="button" class="btn-layout" onclick="window.location.href='setup.html';" style="background-color: var(--secondary-color);" data-next>Register</button>
+                    <p>Already have an Account?&nbsp; <a href="Sign In.html">Sign In</a></p>
+                </div>
+                
+            </div>
+            <div class="image-layout">
+                <img src="images/third-page-img.png">
+            </div>
+     </form>
+     </div>
+
+
+ </body>
+</html>

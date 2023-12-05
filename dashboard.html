@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klinvoice -- Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="dash.js" defer></script>
+</head>
+<body class="dashboard-body">
+
+    <!-- --------------------------------LOADING PAGE -->
+   <div class="loading">
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container-gif">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar"><i class="fa-solid fa-bars"></i></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                           <span class="name-content">
+                               <img src="images/user.svg">
+                               <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                           </span>
+                       </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="side-bar-gif">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="dashboard.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span class="active" onclick="window.location.href ='dashboard.html';"><img src="images/dashboard.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span onclick="window.location.href ='contact.html';"><img src="images/contact.svg"><p>Contacts</p></span>
+                <span onclick="window.location.href ='setting.html';"><img src="images/setting.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+        <div class="dashboard-wrapper-gif">
+            <!-- <div class="loader">  -->
+                <img src="images/loader-quit.svg" alt="">
+           <!-- </div> -->
+        </div>
+   </div>
+
+<!-- --------------------------------------------------------- MAIN PAGE -->
+
+
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar" onclick="displayOutput()"><i class="fa-solid fa-bars"></i></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                           <span class="name-content" onclick="myAccount()">
+                               <img src="images/user.svg">
+                               <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                           </span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <span onclick="window.location.href='billing.html';"><img src="images/cart.svg">Billings</span>
+            <span onclick="window.location.href='Sign In.html';"><img src="images/logot.svg">Log Out</span>
+            <span><img src="images/plug.svg">Addons</span>
+        </div>
+    </header>
+    <div class="side-bar">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="home.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span class="active" onclick="window.location.href ='dashboard.html';"><img src="images/dashboard.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span onclick="window.location.href ='contact.html';"><img src="images/contact.svg"><p>Contacts</p></span>
+                <span onclick="window.location.href ='setting.html';"><img src="images/setting.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="dashboard-wrapper">
+            <h1>Dashboard</h1>
+            <div class="dashboard-content">
+                <div class="revenue-bar"  id="bar">
+                    <div class="ctr">
+                        <span class="amt" id="rev-amt">0.00</span>
+                        <button type="button" class="btn-amt">Revenue - NGN</button>
+                    </div>
+                    <img src="images/tag.svg">
+                </div>
+
+                <div class="expenses-bar" id="bar">
+                    <div class="ctr">
+                        <span class="amt" id="exp-amt">0.00</span>
+                        <button type="button" class="btn-amt">Expenses - NGN</button>
+                    </div>
+                    <img src="images/solar-bag.svg">
+                </div>
+
+                <div class="outstanding-bar" id="bar">
+                    <div class="ctr">
+                        <span class="amt" id="out-amt">0.00</span>
+                        <button type="button" class="btn-amt out-btn">Outstanding-NGN</button>
+                    </div>
+                    <img src="images/icon0s.svg">
+                </div>
+
+                <div class="revenue-board">
+                    <div class="rev-header">
+                        <h2>REVENUE & EXPENSES</h2>
+                        <span class="select-bar">Select Period <img src="images/drop-white.svg"></span>
+                    </div>
+
+                    <div class="bar-chart-revenue">
+                        <div class="vertcal-chart">
+                            <div>1 <span class="line"></span></div>
+                            <div>0.75 <span class="line"></span></div>
+                            <div>0.5 <span class="line"></span></div>
+                            <div>0.25 <span class="line"></span></div>
+                            <div>0 <span class="line"></span></div>
+                        </div>
+                        <div class="horizontal-chart">
+                            <span>2023-10-21</span>
+                            <span>2023-10-21</span>
+                            <span>2023-10-21</span>
+                            <span>2023-10-21</span>
+                            <span>2023-10-21</span>
+                        </div>
+                    </div>
+                    <div class="revenue-records">
+                        <div>
+                            <span>NGN 0.00</span>
+                            <span>Today's Revenuess</span>
+                        </div>
+                        <div>
+                            <span>NGN 0.00</span>
+                            <span>Yesterday's Revenue</span>
+                        </div>
+                        <div>
+                            <span>NGN 0.00</span>
+                            <span>This Month's Revenue</span>
+                        </div>
+                        <div>
+                            <span>NGN 0.00</span>
+                            <span>This Year's Revenue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="statistic-board" id="bar">
+                    <div class="ctr">
+                        <span class="amt" id="stat-amt">0.00</span>
+                        <p class="font-mon">This Month Revenue</p>
+                    </div>
+                    <img src="images/static.svg">
+                </div>
+
+                <div class="tips-guide">
+                        <div class="guide-wrapper">
+                            <div class="guide">
+                                <span>Get Started</span>
+                                <span class="tip">Tips & Guides</span>
+                            </div>
+                            <img src="images/checkman.svg">
+                        </div>
+                        <div class="text-wrapper">
+                            <h4>Welcome on-board! Create & send your first invoice to get started.</h4>
+                            <button type="button">Start Invoice Now</button>
+                        </div>
+                </div>
+
+            </div>
+            <div class="footer-wrapper">
+                <p>© 2023 Klinvoice Inc. All Rights Reserved</p>
+                <p>API Document</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

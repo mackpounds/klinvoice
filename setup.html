@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinvoice -- SIGN IN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="node.js" defer></script>
+</head>
+<body>
+    <!-- sign in -->
+    <div  class="form--body" data-multi-step>
+        <!-- login form set:  login INFORMATION-->
+        <form class="form--container" method="get" data-step>
+            <div class="form--layout">
+                <h1 class="account-information-text-tag card">Set Up Your Account</h1>
+                
+                <div class="form--layout--sec card">
+                    <label for="bname">Business Name</label>
+                    <input class="input" type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="lname">Business Category</label>
+                    <input class="input" type="text" name="lname" id="lname" autocomplete="off" required>
+                    <label for="select">Selet Currency</label>
+                    <select name="select" id="select">
+                        <option value="1">USD</option>
+                        <option value="1">NGN</option>
+                        <option value="1">EUR</option>
+                    </select><br>
+                    <label for="name">First Name</label>
+                    <input class="input" type="text" name="name" id="name" autocomplete="off" required>
+                    <label for="sname">Last Name</label>
+                    <input class="input" type="text" name="sname" id="sname" autocomplete="off" required><br>
+                    <button type="button" class="btn-layout" onclick="window.location.href='Sign In.html';" style="background-color: var(--secondary-color);" data-next>Get Started</button>
+                </div>
+                
+            </div>
+            <div class="image-layout">
+                <img src="images/girl rigt.png">
+            </div>
+     </form>
+     </div>
+
+
+ </body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>klinvoice -- settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/Klinvoice icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9def338393.js" crossorigin="anonymous" defer></script>
+    <script src="dash.js" defer></script>
+    <script src="setting.js" defer></script>
+</head>
+<body class="dashboard-body">
+
+    <!-- --------------------------------LOADING PAGE -->
+   <div class="loading">
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container-gif">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar"><img src="images/menu.svg"></i></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                           <span class="name-content">
+                               <img src="images/user.svg">
+                               <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                           </span>
+                       </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="side-bar-gif">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="dashboard.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span  onclick="window.location.href ='dashboard.html';"><img src="images/light dash.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/dark invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span  onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span  onclick="window.location.href ='contact.html';"><img src="images/contact.svg"><p>Contacts</p></span>
+                <span class="active"  onclick="window.location.href ='setting.html';"><img src="images/dark-cog.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+        <div class="dashboard-wrapper-gif">
+            <!-- <div class="loader">  -->
+                <img src="images/loader-quit.svg" alt="">
+                           <!-- </div> -->
+        </div>
+   </div>
+
+<!-- --------------------------------------------------------- MAIN PAGE -->
+
+
+    <header>
+        <div class="user-menu-wrapper">
+            <div class="user-menu-container">
+                <div class="user-menu-content">
+                    <span class="business-bar">
+                        <div class="show-bar" onclick="displayOutput()"><img src="images/menu.svg"></div>
+                        <h3>Riyas Perfumery <img src="images/drop-btn.svg" width="10px"></h3>
+                    </span>
+                    <span class="notification-bar">
+                       <img src="images/bell.svg">
+                       <div class="name-bar">
+                        <span class="name-content" onclick="myAccount()">
+                            <img src="images/user.svg">
+                            <h3>Gloria Nwankwo <img src="images/drop-btn.svg" width="10px"></h3>
+                        </span>
+                      
+                    </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <span onclick="window.location.href='billing.html';"><img src="images/cart.svg">Billings</span>
+            <span onclick="window.location.href='Sign In.html';"><img src="images/logot.svg">Log Out</span>
+            <span><img src="images/plug.svg">Addons</span>
+           </div>
+    </header>
+    <div class="side-bar">
+        <div class="side-bar-wrapper">
+            <div class="website-logo">
+               <a href="home.html"> <img src="images/Klinvoice Logo white 1.png"></a>
+            </div>
+            <div class="side-bar-content">
+                <span  onclick="window.location.href ='dashboard.html';"><img src="images/light dash.svg"><p>Dashboard</p></span>
+                <span  onclick="window.location.href ='invoice.html';"><img src="images/invoice.svg"><p>Invoices</p></span>
+                <span onclick="window.location.href ='estimate.html';"><img src="images/estimate.svg"><p>Estimate</p></span>
+                <span  onclick="window.location.href ='expenses.html';"><img src="images/expenses.svg"><p>Expenses</p></span>
+                <span onclick="window.location.href ='contact.html';"><img src="images/contact.svg"><p>Contacts</p></span>
+                <span class="active"  onclick="window.location.href ='setting.html';"><img src="images/dark-cog.svg"><p>Settings</p></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="update-profile">
+        <div class="profile-wrapper">
+            <span>
+                <p>Update Profile</p>
+                <i class="fa fa-times dismissProf"></i>
+            </span>
+            <form>
+                <div class="change-name">
+                   <label for="name">FIRST NAME <br>
+                    <input type="text" name="name" id="name" placeholder="Gloria">
+                   </label>
+                   <label for="l-name">LAST NAME <br>
+                    <input type="text" name="l-name" id="l-name" placeholder="Nwankwo">
+                   </label>
+                </div>
+                <div class="change-name">
+                   <label for="email">EMAIL <br>
+                    <input type="email" name="email" id="email" placeholder="nwankwogloria214@gmail.com">
+                   </label>
+                   <label for="no">PHONE NUMBER <br>
+                    <input type="number" name="no" id="no" placeholder="00-000-0000">
+                   </label>
+                </div>
+                <label for="add">ADDRESS <br>
+                    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+                </label>
+                <div class="save">
+                    <button type="button">Save Changes</button>
+                    <button type="button">Change Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  
+    <main>
+        
+        <div class="setting-col">
+            <div class="setting-header">
+                <div class="setting-header-content">
+                    <div class="setting-text-content">
+                        <h1>Riyas Perfumery</h1>
+                        <p>nwankwogloria214@gmail.com</p>
+                        <img src="images/fire.svg">
+                    </div>
+                    <span class="profile">Update Profile</span>
+                </div>
+            </div>
+
+            <div class="setting-container">
+                <div class="setting-content-wrapper">
+                    <!-- <div class="setting-bars">
+                        <span class="active carusel-btn">Business Settings</span>
+                        <span class="carusel-btn">invoice Settings</span>
+                        <span class="carusel-btn">manage user <img src="images/mdi_badge-outline.svg"></span>
+                    </div> -->
+                    <div class="business-setting business-complete">
+                        <form>
+                           <div class="input-layout">
+                            <label for="b-name">Business Name <br>
+                                <input type="text" name="b-name" id="b-name" placeholder="Riyas Perfumery" required>
+                            </label>
+                            <label for="b-email">Business Email <br>
+                                <input type="email" name="b-email" id="b-email" placeholder="nwankwogloria214@gmail.com">
+                            </label>
+                            <label for="b-no">Business Phone Number <br>
+                                <input type="number" name="b-no" id="b-no" placeholder="00-000-0000">
+                            </label>
+                            <label for="b-cat">Business Category <br>
+                                <input type="text" name="b-cat" id="b-cat" placeholder="Others">
+                            </label>
+                            <label for="b-pay"> Payment Gateway <br>
+                                <input type="number" name="b-pay" id="b-pay" placeholder="Enter Number (Optional)">
+                            </label>
+                            <label for="b-add">BILLING ADDRESS <br>
+                                <textarea name="b-add" id="b-add" cols="30" rows="10"></textarea>
+                            </label>
+                           </div>
+                          <span> <button type="submit">save and continue</button></span>
+                        </form>
+                        <div class="logo-upload-bar">
+                            <p>Upload Business Logo.</p>
+                            <div class="upload-logo"><span><img src="images/upload-logo.svg"> Upload Logo</span> <p>Maximum of 250kb in size</p></div>
+                            <button type="button"><img src="images/import.svg">Upload Logo</button>
+                        </div>
+                    </div>
+
+
+                    <!-- invoice setting -->
+                    <div class="business-setting">
+                        <form>
+                           <div class="invoice-layout">
+                            <div>
+                             <label for="currency">Currency <br>
+                                <select name="currency" id="currency">
+                                    <img src="images/drop-btn.svg">
+                                    <option value="1">Nigeria Naira NGN</option>
+                                    <option value="1">United State Dollar USD</option>
+                                    <option value="1">Euroupe Euros</option>
+                                    <option value="1">United Kingdom Pounds</option>
+                                </select>
+                             </label>
+                             <label for="auto">Auto Dashboard <br>
+                                 <select name="auto" id="auto">
+                                     <img src="images/drop-btn.svg">
+                                     <option value="1">Send automatic Payment Reminder</option>
+                                     <option value="1">Send automatic Payment Reminder</option>
+                                     <option value="1">Send Payment Reminder for 1 hour</option>
+                                     <option value="1">Send automatic Payment Reminder</option>
+                                 </select>
+                              </label>
+                              <label for="inv">Invoice Prefix <br>
+                                 <p><input type="text" name="inv" id="inv" placeholder="INV"><span id="u">-XXX</span></p>
+                             </label>
+                            </div><div>
+                            <label for="tax-rate">Tax Rate <br>
+                               <input type="number" name="tax-rate" id="tax-rate" value="0">
+                           </label>
+                             <label for="due">Due After <br>
+                                <select name="due" id="due">
+                                    <img src="images/drop-btn.svg">
+                                    <option value="1">14 Days</option>
+                                    <option value="1">24 Days</option>
+                                    <option value="1">44 Days</option>
+                                    <option value="1">74 Days</option>
+                                </select>
+                             </label>
+                             <label for="est">Estimate Prefix <br>
+                                <p><input type="text" name="est" id="est" placeholder="INV"><span id="u">-XXX</span></p>
+                            </label>
+                             </div>
+                           </div>
+
+                           <!--  -->
+                           <div class="save-page-wrapper">
+                            <div class="footer-note-container">
+                                <h3>Footer Note <span>?</span></h3>
+                                <div class="footer-note-wrapper">
+                                    <div class="edit-note-layout">
+                                        <span><img src="images/filter.svg"><img src="images/drop-btn.svg"></span>
+                                        <span><b>B</b></span>
+                                        <span><img src="images/italic.svg"></span>
+                                        <span><u><b>U</b></u></span>
+                                        <span><img src="images/eraser.svg"></span>
+                                        <span><p id="popin">poppins</p><img src="images/drop-btn.svg"></span>
+                                        <span><p id="a">A</p><i><img src="images/drop-btn.svg"></i></span>
+                                        <span><img src="images/ulli.svg"></span>
+                                        <span><img src="images/olli.svg"></span>
+                                        <span><img src="images/menu.svg"><img src="images/drop-btn.svg"></span>
+                                        <span><img src="images/stroke.svg"><img src="images/drop-btn.svg"></span>
+                                        <span><img src="images/calender.svg"><img src="images/drop-btn.svg"></span>
+                                        <span><img src="images/link.svg"></span>
+                                        <span><img src="images/reverse.svg"></span>
+                                        <span><img src="images/redo.svg"></span>
+                                        <span><img src="images/zoom.svg"></span>
+                                        <span><b>?</b></span>
+                                    </div>
+                                    <div class="edit-space-container">
+                                        <div class="edit-bar" contenteditable="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+
+                          <span> <button type="submit">save and continue</button></span>
+                        </form>
+                        <div class="logo-upload-bar">
+                            <p>Upload Business Logo.</p>
+                            <div class="upload-logo"><span><img src="images/upload-logo.svg"> Upload Logo</span> <p>Maximum of 250kb in size</p></div>
+                            <button type="button"><img src="images/import.svg">Upload Logo</button>
+                        </div>
+                    </div>
+                    <div class="business-setting">
+                        <div class="upgrade-plan">
+                            <p>To add and manage more users, you need to upgrade to premium plan </p>
+                            <button type="button"><img src="images/go-up.svg">upgrade Plan</button>
+                        </div>
+                        <div class="logo-upload-bar">
+                            <p>Upload Business Logo.</p>
+                            <div class="upload-logo"><span><img src="images/upload-logo.svg"> Upload Logo</span> <p>Maximum of 250kb in size</p></div>
+                            <button type="button"><img src="images/import.svg">Upload Logo</button>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <button type="button" class="deactive-btn">Deactivate Account</button>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-wrapper">
+            <p>© 2023 Klinvoice Inc. All Rights Reserved</p>
+            <p>API Document</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
