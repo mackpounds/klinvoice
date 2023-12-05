@@ -1,0 +1,22 @@
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="subway:admin-1" clip-path="url(#clip0_345_738)">
+<g id="Mask group">
+<mask id="mask0_345_738" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="-1" width="17" height="17">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M13.5 0H0.9C0.661305 0 0.432387 0.0790176 0.263604 0.21967C0.0948213 0.360322 0 0.551088 0 0.75V14.25C0 14.4489 0.0948213 14.6397 0.263604 14.7803C0.432387 14.921 0.661305 15 0.9 15H13.5C13.7387 15 13.9676 14.921 14.1364 14.7803C14.3052 14.6397 14.4 14.4489 14.4 14.25V0.75C14.4 0.551088 14.3052 0.360322 14.1364 0.21967C13.9676 0.0790176 13.7387 0 13.5 0Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M4.05005 9.75H10.35M4.05005 12H7.20005M4.95005 4.875H9.45005M7.20005 6.75V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_345_738)">
+<path id="Vector_3" d="M-3.6001 -1.5H17.9999V16.5H-3.6001V-1.5Z" fill="white"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_345_738">
+<rect width="15" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>
