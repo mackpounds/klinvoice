@@ -1861,7 +1861,7 @@ body {
 }
 
 .frame {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 20px;
   width: 180px;
