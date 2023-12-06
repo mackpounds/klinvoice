@@ -4190,9 +4190,9 @@ footer {
   width: 90%;
 }
 .api-appon .klin-footer img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: fixed;
+  bottom: 10%;
+  right: 12px;
 }
 
 @media screen and (max-width: 765px) {
